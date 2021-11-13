@@ -17,9 +17,9 @@ gsettings set org.gnome.shell favorite-apps "['gnome-control-center.desktop', 'o
 
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'br')]"
 
-gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar toggle-maximize-horizontally
-gsettings set org.gnome.desktop.wm.keybindings maximize-horizontally "['<Primary><Super>Right']"
-gsettings set org.gnome.desktop.wm.keybindings maximize-vertically "['<Primary><Super>Down']"
+# gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar toggle-maximize-horizontally
+# gsettings set org.gnome.desktop.wm.keybindings maximize-horizontally "['<Primary><Super>Right']"
+# gsettings set org.gnome.desktop.wm.keybindings maximize-vertically "['<Primary><Super>Down']"
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Primary><Super>Up']"
 gsettings set org.gnome.GPaste launch-ui '<Super>G'
 
@@ -27,3 +27,6 @@ gsettings set org.gnome.gedit.preferences.editor highlight-current-line false
 
 #gnome-extensions disable ubuntu-appindicators@ubuntu.com
 
+# Reset all gsettings
+# gsettings list-schemas | xargs -n 1 gsettings reset-recursively
+# Reset all gsettings
